@@ -87,7 +87,6 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 
 ### OS
 ![](https://img.shields.io/badge/-Ubuntu-informational?style=for-the-badge&logo=Ubuntu&logoColor=white&color=E95420)
-![](https://img.shields.io/badge/-CentOS-informational?style=for-the-badge&logo=CentOS&logoColor=white&color=262577)
 ![](https://img.shields.io/badge/-RedHat_Linux-informational?style=for-the-badge&logo=redhat&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Amazon_Linux-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-MacOS-informational?style=for-the-badge&logo=apple&logoColor=white&color=000000)
@@ -100,15 +99,11 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ![](https://img.shields.io/badge/-Rancher-informational?style=for-the-badge&logo=rancher&logoColor=white&color=0075A8)
 
 ### Public Clouds
-![](https://img.shields.io/badge/-GCP-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
 ![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 
 ### CI/CD
 ![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
-![](https://img.shields.io/badge/-Drone-informational?style=for-the-badge&logo=drone&logoColor=white&color=212121)
 ![](https://img.shields.io/badge/-Jenkins-informational?style=for-the-badge&logo=jenkins&logoColor=white&color=D24939)
-![](https://img.shields.io/badge/-GoCD-informational?style=for-the-badge&logo=gocd&logoColor=white&color=94399E)
-![](https://img.shields.io/badge/-Bamboo-informational?style=for-the-badge&logo=bamboo&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/-Google_Cloud_Build-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
 ![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
 
@@ -116,13 +111,14 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ### IaC/Configuration Management
 ![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
-![](https://img.shields.io/badge/-Puppet-informational?style=for-the-badge&logo=puppet&logoColor=white&color=FFAE1A)
+
 
 ### Build Tools
 ![](https://img.shields.io/badge/-NPM-informational?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)
 ![](https://img.shields.io/badge/-Apache_Maven-informational?style=for-the-badge&logo=apachemaven&logoColor=white&color=C71A36)
 ![](https://img.shields.io/badge/-Gradle-informational?style=for-the-badge&logo=gradle&logoColor=white&color=02303A)
 ![](https://img.shields.io/badge/-Yarn-informational?style=for-the-badge&logo=yarn&logoColor=white&color=2C8EBB)
+
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=nitinjain999&theme=blue-green&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=nitinjain999&theme=blue-green&hide_border=false)<br/>
