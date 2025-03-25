@@ -176,15 +176,13 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ### GitOps & Deployment
 ![](https://img.shields.io/badge/-FluxCD-informational?style=for-the-badge&logo=flux&logoColor=white&color=0095D5)
 ![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
+![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
 
 ### Public Clouds
 ![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-Azure-informational?style=for-the-badge&logo=microsoftazure&logoColor=white&color=0078D4)
 ![](https://img.shields.io/badge/-AWS_Landing_Zone-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=FF9900)
 
-### CI/CD
-![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
-![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
 
 ### IaC / Config Management
 ![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
