@@ -11,6 +11,7 @@ Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **15+ years in IT*
 - ☁️ Currently thriving as a **Cloud Architect**
 - 👥 Mentored 20+ engineers throughout my career  
 - 📚 Lifelong learner — currently focused on mastering more advanced AWS solutions  
+- ⚙️ Experimenting with **4G Core deployments on Intel NUC** devices for edge-cloud integrations  
 ---
 
 ## 🧠 Core Expertise
@@ -25,7 +26,7 @@ Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **15+ years in IT*
 
 **Cloud Platforms:**
 - ☁️ Amazon AWS (Primary)
-- ☁️ Azure (Certified)
+- ☁️ Microsoft Azure
 
 **Tooling & Frameworks:**
 - 🔧 Terraform, Docker, Jenkins, GitHub Actions
@@ -34,6 +35,8 @@ Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **15+ years in IT*
 
 **Programming Languages:**
 - 🐍 Python
+- 🦫 Go (Golang)
+
 ---
 
 ## 🛠️ Notable Projects
@@ -72,16 +75,13 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 
 ---
 
-## 📊 GitHub Stats
+### 🔹 **Edge Lab: 4G Core on Intel NUC**
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=transparent" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nitinjain999&theme=transparent" width="48%" />
-</p>
+- 💻 Deployed lightweight **4G EPC/UPF core components** on Intel NUC devices
+- 🌐 Integrated with AWS VPC for hybrid cloud lab simulations
+- 🧪 Perfect for edge-cloud prototyping, private LTE/5G labs, and telco DevOps scenarios
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=flat&column=6&margin-w=5&margin-h=5" />
-</p>
+---
 
 ## 🔧 Technologies & Tools
 
@@ -91,7 +91,6 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ![](https://img.shields.io/badge/-Amazon_Linux-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-MacOS-informational?style=for-the-badge&logo=apple&logoColor=white&color=000000)
 
-
 ### Containers
 ![](https://img.shields.io/badge/-RedHat_OpenShift-informational?style=for-the-badge&logo=redhatopenshift&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Docker-informational?style=for-the-badge&logo=docker&logoColor=white&color=2496ED)
@@ -100,6 +99,7 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 
 ### Public Clouds
 ![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
+![](https://img.shields.io/badge/-Azure-informational?style=for-the-badge&logo=microsoftazure&logoColor=white&color=0078D4)
 
 ### CI/CD
 ![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
@@ -107,21 +107,30 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ![](https://img.shields.io/badge/-Google_Cloud_Build-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
 ![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
 
-
-### IaC/Configuration Management
+### IaC / Config Management
 ![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
 
+---
 
-# 📊 GitHub Stats:
+## 📊 GitHub Stats
+
 ![](https://github-readme-stats.vercel.app/api?username=nitinjain999&theme=blue-green&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=nitinjain999&theme=blue-green&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&theme=blue-green&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
+---
+
 ## 🏆 GitHub Trophies
+
 ![](https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
+---
+
 ### ✍️ Random Dev Quote
+
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+---
 
+> Thanks for visiting! Feel free to explore my projects or connect to chat cloud, DevOps, or edge computing!
