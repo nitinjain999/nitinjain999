@@ -173,6 +173,10 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ![](https://img.shields.io/badge/-Amazon_EKS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-Rancher-informational?style=for-the-badge&logo=rancher&logoColor=white&color=0075A8)
 
+### GitOps & Deployment
+![](https://img.shields.io/badge/-FluxCD-informational?style=for-the-badge&logo=flux&logoColor=white&color=0095D5)
+![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
+
 ### Public Clouds
 ![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-Azure-informational?style=for-the-badge&logo=microsoftazure&logoColor=white&color=0078D4)
