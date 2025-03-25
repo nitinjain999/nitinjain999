@@ -73,6 +73,81 @@ Built a production-ready AWS Org with 40+ accounts featuring:
   - Integrated with on-prem
   - Secure federated AWS access
 
+# Hi, I'm Nitin Jain 👋  
+### Cloud Architect | DevOps Expert | AWS & Azure Certified | Mentor | Automator
+
+Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **15+ years in IT**, specializing in **cloud technologies for 10+ years** and **DevOps for the past decade**. I love architecting scalable, secure, and automated infrastructure — and mentoring others to do the same.
+
+---
+
+## 🚀 About Me
+
+- 🏆 Certified AWS & Azure DevOps Professional  
+- ☁️ Currently thriving as a **Cloud Architect**
+- 👥 Mentored 20+ engineers throughout my career  
+- 📚 Lifelong learner — currently focused on mastering more advanced AWS solutions  
+- ⚙️ Experimenting with **4G Core deployments on Intel NUC** devices for edge-cloud integrations  
+---
+
+## 🧠 Core Expertise
+
+**DevOps & Cloud Engineering:**
+- ✅ Kubernetes
+- ✅ Infrastructure as Code (IaC)
+- ✅ CI/CD Pipelines
+- ✅ Automation
+- ✅ Scalability
+- ✅ System Resiliency
+
+**Cloud Platforms:**
+- ☁️ Amazon AWS (Primary)
+- ☁️ Microsoft Azure
+
+**Tooling & Frameworks:**
+- 🔧 Terraform, Docker, Jenkins, GitHub Actions
+- 📊 CloudWatch, Prometheus, Grafana, Dynatrace, Splunk
+- 🔐 CloudTrail, SecurityHub, AWS Config
+
+**Programming Languages:**
+- 🐍 Python
+- 🦫 Go (Golang)
+
+---
+
+## 🛠️ Notable Projects
+
+### 🔹 **AWS Organization Setup with Terraform (IaC)**  
+Built a production-ready AWS Org with 40+ accounts featuring:
+
+- **Billing & Authentication**
+  - Centralized billing with alerting
+  - SSO via Microsoft Azure
+
+- **Roles & Access**
+  - Federated access (AWS, on-prem, GitHub Actions)
+  - Global security via SCPs, permission boundaries
+
+- **Networking**
+  - DirectConnect, Transit Gateways, IPsec VPNs
+
+- **Security & Compliance**
+  - CloudTrail auditing
+  - SecurityHub + AWS Config
+
+- **Monitoring**
+  - CloudWatch, Prometheus, Grafana
+  - Extended with Dynatrace & Splunk
+
+---
+
+### 🔹 **GitHub Organization & CI/CD Overhaul**
+
+- 📦 Fully managed GitHub Org with Terraform  
+- 🚀 Migrated legacy CI/CD to **GitHub Actions**  
+- 🖥️ Built self-hosted GitHub Action runners on AWS:
+  - Integrated with on-prem
+  - Secure federated AWS access
+
 ---
 
 ### 🔹 **Edge Lab: 4G Core on Intel NUC**
