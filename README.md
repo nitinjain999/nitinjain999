@@ -113,12 +113,6 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
 
 
-### Build Tools
-![](https://img.shields.io/badge/-NPM-informational?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)
-![](https://img.shields.io/badge/-Apache_Maven-informational?style=for-the-badge&logo=apachemaven&logoColor=white&color=C71A36)
-![](https://img.shields.io/badge/-Gradle-informational?style=for-the-badge&logo=gradle&logoColor=white&color=02303A)
-![](https://img.shields.io/badge/-Yarn-informational?style=for-the-badge&logo=yarn&logoColor=white&color=2C8EBB)
-
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=nitinjain999&theme=blue-green&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=nitinjain999&theme=blue-green&hide_border=false)<br/>
