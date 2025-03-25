@@ -161,30 +161,31 @@ Built a production-ready AWS Org with 40+ accounts featuring:
 ## 🔧 Technologies & Tools
 
 ### OS
-![](https://img.shields.io/badge/-Ubuntu-informational?style=for-the-badge&logo=Ubuntu&logoColor=white&color=E95420)
+![](https://img.shields.io/badge/-Ubuntu-informational?style=for-the-badge&logo=ubuntu&logoColor=white&color=E95420)
 ![](https://img.shields.io/badge/-RedHat_Linux-informational?style=for-the-badge&logo=redhat&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Amazon_Linux-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-MacOS-informational?style=for-the-badge&logo=apple&logoColor=white&color=000000)
 
-### Containers
+### Containers & Orchestration
 ![](https://img.shields.io/badge/-RedHat_OpenShift-informational?style=for-the-badge&logo=redhatopenshift&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Docker-informational?style=for-the-badge&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/-Kubernetes-informational?style=for-the-badge&logo=kubernetes&logoColor=white&color=326CE5)
+![](https://img.shields.io/badge/-Amazon_EKS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-Rancher-informational?style=for-the-badge&logo=rancher&logoColor=white&color=0075A8)
 
 ### Public Clouds
 ![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 ![](https://img.shields.io/badge/-Azure-informational?style=for-the-badge&logo=microsoftazure&logoColor=white&color=0078D4)
+![](https://img.shields.io/badge/-AWS_Landing_Zone-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=FF9900)
 
 ### CI/CD
 ![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
-![](https://img.shields.io/badge/-Jenkins-informational?style=for-the-badge&logo=jenkins&logoColor=white&color=D24939)
-![](https://img.shields.io/badge/-Google_Cloud_Build-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
 ![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
 
 ### IaC / Config Management
 ![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
+
 
 ---
 
