@@ -1,7 +1,7 @@
 # Hi, I'm Nitin Jain 👋  
 ### Cloud Architect | DevOps Expert | AWS & Azure Certified | Mentor | Automator
 
-Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **18+ years in IT**, specializing in **cloud technologies for 15+ years** and **DevOps for the past decade**. I love architecting scalable, secure, and automated infrastructure — and mentoring others to do the same.
+Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **15+ years in IT**, specializing in **cloud technologies for 10+ years** and **DevOps for the past decade**. I love architecting scalable, secure, and automated infrastructure — and mentoring others to do the same.
 
 ---
 
@@ -11,8 +11,6 @@ Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **18+ years in IT*
 - ☁️ Currently thriving as a **Cloud Architect**
 - 👥 Mentored 20+ engineers throughout my career  
 - 📚 Lifelong learner — currently focused on mastering more advanced AWS solutions  
-- 📫 Reach out: [LinkedIn](https://www.linkedin.com/in/nitinjain999/) • [Email](mailto:nitinjain999@gmail.com)
-
 ---
 
 ## 🧠 Core Expertise
@@ -36,8 +34,6 @@ Welcome to my GitHub! I'm a seasoned **Cloud Architect** with **18+ years in IT*
 
 **Programming Languages:**
 - 🐍 Python
-- 🦫 Go (Golang)
-
 ---
 
 ## 🛠️ Notable Projects
@@ -87,21 +83,46 @@ Built a production-ready AWS Org with 40+ accounts featuring:
   <img src="https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=flat&column=6&margin-w=5&margin-h=5" />
 </p>
 
----
+## 🔧 Technologies & Tools
 
-## ✍️ Dev Quote of the Day
+### OS
+![](https://img.shields.io/badge/-Ubuntu-informational?style=for-the-badge&logo=Ubuntu&logoColor=white&color=E95420)
+![](https://img.shields.io/badge/-CentOS-informational?style=for-the-badge&logo=CentOS&logoColor=white&color=262577)
+![](https://img.shields.io/badge/-RedHat_Linux-informational?style=for-the-badge&logo=redhat&logoColor=white&color=EE0000)
+![](https://img.shields.io/badge/-Amazon_Linux-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
+![](https://img.shields.io/badge/-MacOS-informational?style=for-the-badge&logo=apple&logoColor=white&color=000000)
 
-> _"The best architectures, requirements, and designs emerge from self-organizing teams."_  
-> — Agile Manifesto
 
----
+### Containers
+![](https://img.shields.io/badge/-RedHat_OpenShift-informational?style=for-the-badge&logo=redhatopenshift&logoColor=white&color=EE0000)
+![](https://img.shields.io/badge/-Docker-informational?style=for-the-badge&logo=docker&logoColor=white&color=2496ED)
+![](https://img.shields.io/badge/-Kubernetes-informational?style=for-the-badge&logo=kubernetes&logoColor=white&color=326CE5)
+![](https://img.shields.io/badge/-Rancher-informational?style=for-the-badge&logo=rancher&logoColor=white&color=0075A8)
 
----
+### Public Clouds
+![](https://img.shields.io/badge/-GCP-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
+![](https://img.shields.io/badge/-AWS-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=232F3E)
 
-> Thanks for visiting — feel free to explore my work, fork anything useful, or reach out to chat tech!
+### CI/CD
+![](https://img.shields.io/badge/-Github_Actions-informational?style=for-the-badge&logo=githubactions&logoColor=white&color=2088FF)
+![](https://img.shields.io/badge/-Drone-informational?style=for-the-badge&logo=drone&logoColor=white&color=212121)
+![](https://img.shields.io/badge/-Jenkins-informational?style=for-the-badge&logo=jenkins&logoColor=white&color=D24939)
+![](https://img.shields.io/badge/-GoCD-informational?style=for-the-badge&logo=gocd&logoColor=white&color=94399E)
+![](https://img.shields.io/badge/-Bamboo-informational?style=for-the-badge&logo=bamboo&logoColor=white&color=0052CC)
+![](https://img.shields.io/badge/-Google_Cloud_Build-informational?style=for-the-badge&logo=googlecloud&logoColor=white&color=4285F4)
+![](https://img.shields.io/badge/-Argo_CD-informational?style=for-the-badge&logo=argo&logoColor=white&color=EF7B4D)
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat-square&logo=markdown&logoColor=white) ![Erlang](https://img.shields.io/badge/Erlang-white.svg?style=flat-square&logo=erlang&logoColor=a90533) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat-square&logo=azure-devops&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=flat-square&logo=google-cloud&logoColor=white) ![OpenStack](https://img.shields.io/badge/Openstack-%23f01742.svg?style=flat-square&logo=openstack&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat-square&logo=terraform&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=flat-square&logo=confluence&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![Rancher](https://img.shields.io/badge/rancher-%230075A8.svg?style=flat-square&logo=rancher&logoColor=white) ![Vagrant](https://img.shields.io/badge/vagrant-%231563FF.svg?style=flat-square&logo=vagrant&logoColor=white) ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=flat-square&logo=elasticsearch) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=flat-square&logo=jira&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=flat-square&logo=Raspberry-Pi) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white) ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=flat-square&logo=ansible&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat-square&logo=jenkins&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white)
+
+### IaC/Configuration Management
+![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
+![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
+![](https://img.shields.io/badge/-Puppet-informational?style=for-the-badge&logo=puppet&logoColor=white&color=FFAE1A)
+
+### Build Tools
+![](https://img.shields.io/badge/-NPM-informational?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)
+![](https://img.shields.io/badge/-Apache_Maven-informational?style=for-the-badge&logo=apachemaven&logoColor=white&color=C71A36)
+![](https://img.shields.io/badge/-Gradle-informational?style=for-the-badge&logo=gradle&logoColor=white&color=02303A)
+![](https://img.shields.io/badge/-Yarn-informational?style=for-the-badge&logo=yarn&logoColor=white&color=2C8EBB)
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=nitinjain999&theme=blue-green&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=nitinjain999&theme=blue-green&hide_border=false)<br/>
