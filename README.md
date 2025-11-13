@@ -126,6 +126,8 @@ Designed and deployed a 40+ account AWS Org including:
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
+<img width="1199" height="328" alt="image" src="https://github.com/user-attachments/assets/056eff7d-c9c7-4840-ab19-510e5625afa6" />
+
 ---
 
 ### ✍️ Dev Quote of the Day
