@@ -1,7 +1,7 @@
 # Hi, I'm Nitin Jain 👋  
-### Cloud Architect | Platform Engineer | DevOps Expert | AWS & Azure Certified
+### Cloud Architect | Platform Engineer | DevOps Expert | AI Enthusiast | AWS & Azure Certified
 
-Welcome to my GitHub! I architect and operate cloud platforms that stay fast, secure, automated, and scalable. With **15+ years in IT**, **10+ years in cloud**, and **a decade in DevOps**, I build infrastructure that behaves under pressure and improve teams by sharing what I know.
+Welcome to my GitHub! I architect and operate cloud platforms that stay fast, secure, automated, and scalable. With **15+ years in IT**, **10+ years in cloud**, **a decade in DevOps**, and a growing passion for **AI-driven automation**, I build systems that run smoothly and inspire others to level up.
 
 ---
 
@@ -12,6 +12,7 @@ Welcome to my GitHub! I architect and operate cloud platforms that stay fast, se
 - Design production-ready **Terraform** modules and GitOps workflows
 - Automate everything using **Python, GitHub Actions, Ansible, Bash**
 - Build and integrate workloads across **Kubernetes & EKS**
+- Develop automation and developer-tools enhanced with **AI/LLM workflows**
 - Lead cloud-native transformation from on-prem to edge-first AWS architectures
 - Partner with dev, architecture, and security to bring WAF/CDN/DNS into CI/CD
 - Define and track **metrics, logs, traces** to improve reliability and performance
@@ -20,28 +21,33 @@ Welcome to my GitHub! I architect and operate cloud platforms that stay fast, se
 
 ## 🧠 Core Expertise
 
-### DevOps & Cloud Engineering  
+### DevOps, Cloud & Platform Engineering  
 - Kubernetes, EKS, OpenShift  
 - Infrastructure as Code (Terraform)  
 - CI/CD pipelines (GitHub Actions, Jenkins)  
 - GitOps (FluxCD, ArgoCD)  
 - Automation (Python, Bash, Ansible)  
-- Scalability & Reliability Engineering  
+- Scalability, Reliability & Performance Engineering  
 
 ### Cloud Platforms  
 - ☁️ AWS (Primary)
 - ☁️ Azure DevOps & Azure Cloud
 
+### AI & Automation  
+- Building **AI-assisted workflows**, tools, and integrations  
+- Using LLMs to improve developer experience & cloud automation  
+- Experimenting with **AI-driven observability & anomaly detection**  
+
 ### Observability & Security  
 - CloudWatch, Prometheus, Grafana  
 - AOSS/OpenSearch, Splunk, Dynatrace  
 - CloudTrail, SecurityHub, AWS Config  
-- WAF, CDN, Route53, IAM guardrails  
+- WAF, CDN, Route53, IAM  
 
 ### Programming  
 - 🐍 Python  
 - 🦫 Go (Golang)  
- 
+
 ---
 
 ## 🛠️ Notable Projects
@@ -58,24 +64,24 @@ Designed and deployed a 40+ account AWS Org including:
 ---
 
 ### 🔹 GitHub Organization Overhaul & CI/CD Modernization
-- Managed full GitHub Org using Terraform  
+- Managed entire GitHub Org using Terraform  
 - Migrated legacy CI/CD → **GitHub Actions**  
-- Built **secure self-hosted runners** on AWS  
-- Added federated GitHub → AWS access (OIDC)  
+- Built secure **self-hosted runners** on AWS  
+- Implemented GitHub → AWS OIDC federation  
 
 ---
 
 ### 🔹 Platform Ownership & Edge Engineering
 - Managed global CDN, WAF, DNS & edge compute  
 - Optimized caching, routing, and security footprints  
-- Integrated edge services into developer pipelines  
+- Integrated edge services into developer workflows  
 
 ---
 
 ### 🔹 Edge Lab: 4G Core on Intel NUC
-- Deployed lightweight 4G EPC/UPF components  
-- Integrated with AWS VPC for hybrid cloud topologies  
-- Used for telco DevOps, private LTE, and edge experiments  
+- Deployed lightweight **4G EPC/UPF core** components  
+- Integrated with AWS VPC for hybrid-cloud experiments  
+- Used for telco DevOps, private LTE, and edge R&D  
 
 ---
 
@@ -104,7 +110,7 @@ Designed and deployed a 40+ account AWS Org including:
 ![](https://img.shields.io/badge/-Azure-informational?style=for-the-badge&logo=microsoftazure&logoColor=white&color=0078D4)
 
 ### IaC / Config Management
-![](https://img.shields.io/badge/-RedHat_Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
+![](https://img.shields.io/badge/-Ansible-informational?style=for-the-badge&logo=ansible&logoColor=white&color=EE0000)
 ![](https://img.shields.io/badge/-Terraform-informational?style=for-the-badge&logo=terraform&logoColor=white&color=7B42BC)
 
 ---
@@ -127,4 +133,4 @@ Designed and deployed a 40+ account AWS Org including:
 
 ---
 
-> Thanks for stopping by! Explore my repos or reach out if you want to talk cloud, DevOps, platform engineering, or edge computing.
+> Thanks for stopping by! Explore my repos or reach out if you want to talk Cloud, DevOps, Platform Engineering, AI-driven Automation, or Edge Computing.
