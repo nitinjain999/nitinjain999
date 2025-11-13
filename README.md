@@ -41,8 +41,7 @@ Welcome to my GitHub! I architect and operate cloud platforms that stay fast, se
 ### Programming  
 - 🐍 Python  
 - 🦫 Go (Golang)  
-- 🟦 NodeJS (Edge functions)  
-
+ 
 ---
 
 ## 🛠️ Notable Projects
