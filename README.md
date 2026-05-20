@@ -80,26 +80,45 @@ A production-grade Claude Code skill for platform engineers. Covers Kubernetes, 
 
 ---
 
+## 🏗️ Infrastructure as Code
+
+> I treat infrastructure the same way I treat application code — versioned, reviewed, tested, and promoted through environments via GitOps.
+
+| Practice | How I Apply It |
+|----------|---------------|
+| **Terraform** | Modular, reusable modules across 40+ AWS accounts. Remote state in S3 with DynamoDB locking. OIDC-authenticated CI/CD, no long-lived keys. |
+| **GitOps Delivery** | FluxCD reconciles all cluster state from Git. Kustomize overlays per environment. Helm releases managed as HelmRelease objects. |
+| **Policy as Code** | Kyverno enforces image policies, resource limits, and label standards at admission. OPA/Gatekeeper for cross-namespace guardrails. |
+| **Helm** | Charts for internal platform services. Values schemas validated. Tested with `helm unittest` before promotion. |
+| **Secret Management** | External Secrets Operator syncing from AWS Secrets Manager. No plaintext secrets in Git — ever. |
+| **State Safety** | `terraform plan` gated in CI. Blast radius reviewed before `apply`. Separate state files per service boundary. |
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/FluxCD-5468FF?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kustomize-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/OPA-7D3C98?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kyverno-326CE5?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/External_Secrets-FF6B35?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS_CDK-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+</p>
+
+---
+
 ## 📊 GitHub Stats
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" width="100%" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=donut&theme=tokyonight&hide_border=true&langs_count=8" width="100%" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nitinjain999&theme=tokyonight&utcOffset=1" width="100%" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="180" />
+  &nbsp;
+  <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css" height="220" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nitinjain999&theme=tokyonight&utcOffset=1" height="220" />
+</p>
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10" />
