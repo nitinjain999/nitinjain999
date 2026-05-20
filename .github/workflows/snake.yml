@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: Platane/snk/svg-only@v3
         with:
+          github_user_name: nitinjain999
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake.svg
