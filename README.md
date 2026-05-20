@@ -82,19 +82,36 @@ A production-grade Claude Code skill for platform engineers. Covers Kubernetes, 
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
-  <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=donut&theme=tokyonight&hide_border=true&langs_count=8" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nitinjain999&theme=tokyonight&utcOffset=1" width="100%" />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=tokyonight&no-frame=true&row=1&column=7" />
+  <img src="https://github-profile-trophy.vercel.app/?username=nitinjain999&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10" />
 </p>
 
 ---
 
 ## 🐍 Contribution Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nitinjain999&theme=tokyo-night&hide_border=true&area=true&area_color=00B4D8&color=00B4D8&line=00B4D8&point=FFFFFF" width="100%" />
+</p>
 
 <p align="center">
   <picture>
