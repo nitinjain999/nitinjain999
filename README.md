@@ -33,8 +33,8 @@
 
 | | |
 |--------|------------|
-| ☁️ **Edge & CDN** | Global CDN, WAF, DNS — owned end to end. When the internet breaks, I'm the one who fixes it. |
-| ⚙️ **Platform Engineering** | EKS, OpenShift, Linkerd, KEDA, FluxCD, ArgoCD. Not a demo cluster — the thing hundreds of engineers deploy to every day. |
+| ☁️ **Edge & CDN** | Global CDN, WAF, DNS — designed, operated, and owned. Edge performance and security at org scale. |
+| ⚙️ **Platform Engineering** | EKS, OpenShift, Linkerd, KEDA, FluxCD, ArgoCD. The platform hundreds of engineers ship on every day. |
 | 🛡️ **Policy as Code** | Bad config doesn't reach prod. It gets rejected at the door. OPA, Kyverno, Gatekeeper — guardrails with teeth. |
 | 🏢 **Cloud Landing Zones** | Multi-account AWS and Azure foundations at org scale — networking, identity, guardrails, account vending, all Terraformed. |
 | 📡 **Observability** | Datadog and Dynatrace in production — not dashboards for dashboards' sake. Anomaly detection, SLOs, distributed tracing, and alerts that page on signal not noise. |
