@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00B4D8&center=true&vCenter=true&width=750&height=45&lines=Platform+Engineer.+15+years.+Still+shipping.;AWS+%26+Azure+Landing+Zones+at+org+scale;Kubernetes+%C2%B7+EKS+%C2%B7+OpenShift+%C2%B7+Linkerd+%C2%B7+KEDA;GitOps+with+FluxCD+and+ArgoCD;Policy+as+Code+%E2%80%94+OPA+%C2%B7+Kyverno+%C2%B7+Gatekeeper;Terraform+%C2%B7+IaC+%C2%B7+GitOps+%C2%B7+No+manual+changes;AI%2FLLM+workflows+in+production%2C+not+demos;I+don%27t+follow+best+practices.+I+write+them." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00B4D8&center=true&vCenter=true&width=750&height=45&lines=Platform+Engineer.+15+years.+Still+shipping.;AWS+%26+Azure+Landing+Zones+at+org+scale;Kubernetes+%C2%B7+EKS+%C2%B7+OpenShift+%C2%B7+Linkerd+%C2%B7+KEDA;GitOps+with+FluxCD+and+ArgoCD;Policy+as+Code+%E2%80%94+OPA+%C2%B7+Kyverno+%C2%B7+Gatekeeper;Terraform+%C2%B7+IaC+%C2%B7+GitOps+%C2%B7+No+manual+changes;Datadog+%C2%B7+Dynatrace+%C2%B7+SLOs+that+actually+mean+something;AI%2FLLM+workflows+in+production%2C+not+demos;I+don%27t+follow+best+practices.+I+write+them." alt="Typing SVG" />
   </a>
 </p>
 
@@ -37,6 +37,7 @@
 | ⚙️ **Platform Engineering** | EKS, OpenShift, Linkerd, KEDA, FluxCD, ArgoCD. Not a demo cluster — the thing hundreds of engineers deploy to every day. |
 | 🛡️ **Policy as Code** | Bad config doesn't reach prod. It gets rejected at the door. OPA, Kyverno, Gatekeeper — guardrails with teeth. |
 | 🏢 **Cloud Landing Zones** | Multi-account AWS and Azure foundations at org scale — networking, identity, guardrails, account vending, all Terraformed. |
+| 📡 **Observability** | Datadog and Dynatrace in production — not dashboards for dashboards' sake. Anomaly detection, SLOs, distributed tracing, and alerts that page on signal not noise. |
 | 🤖 **AI × Platform** | I'm not waiting for AI to mature — I'm already shipping Claude Code skills, LLM workflows, and AI-assisted ops in production. |
 
 ---
@@ -70,6 +71,7 @@ Most AI assistants give platform advice that would get you paged at 3am. I built
   <img src="https://img.shields.io/badge/OPA-7D3C98?style=flat&logoColor=white" />
   <img src="https://img.shields.io/badge/Kyverno-326CE5?style=flat&logoColor=white" />
   <img src="https://img.shields.io/badge/Gatekeeper-FF6B35?style=flat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Datadog-632CA6?style=flat&logo=datadog&logoColor=white" />
   <img src="https://img.shields.io/badge/Dynatrace-1496FF?style=flat&logo=dynatrace&logoColor=white" />
   <img src="https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenShift-EE0000?style=flat&logo=redhatopenshift&logoColor=white" />
@@ -126,6 +128,31 @@ Every resource is Terraform. Every cluster state is Git. Every secret is in a va
   <img src="https://img.shields.io/badge/Kustomize-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/External_Secrets-FF6B35?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/Azure_Key_Vault-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+</p>
+
+---
+
+## 👁️ Observability
+
+> If you're waiting for a user to report an outage, your observability is decoration.
+
+I run Datadog and Dynatrace in parallel across production workloads — not because I like paying two vendors, but because they catch different things. Between them, nothing goes undetected.
+
+| | |
+|----------|---------------|
+| **Datadog** | APM, infrastructure metrics, log management, synthetics, and custom dashboards. Monitors with noise-suppressed alerts — pages mean something broke, not that a metric spiked for 30 seconds. |
+| **Dynatrace** | Davis AI for anomaly detection across full-stack topology. Automatic dependency mapping. Code-level traces without manual instrumentation. OneAgent on every EKS node. |
+| **SLOs** | Error budgets defined, tracked, and burned down visibly. When the budget is at 20%, the team knows — not after an incident review. |
+| **Distributed Tracing** | Traces from edge to service to database. If something is slow, I know exactly where and why before the ticket is raised. |
+| **Alerting philosophy** | Alert on symptoms, not causes. Page on customer impact. Everything else goes to a channel, not a phone. |
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dynatrace-1496FF?style=for-the-badge&logo=dynatrace&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
+  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=for-the-badge&logo=opentelemetry&logoColor=white" />
 </p>
 
 ---
