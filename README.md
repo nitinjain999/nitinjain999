@@ -136,7 +136,6 @@ Every resource is Terraform. Every cluster state is Git. Every secret is in a va
 
 > If you're waiting for a user to report an outage, your observability is decoration.
 
-I run Datadog and Dynatrace in parallel across production workloads — not because I like paying two vendors, but because they catch different things. Between them, nothing goes undetected.
 
 | | |
 |----------|---------------|
