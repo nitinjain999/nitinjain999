@@ -21,31 +21,31 @@
 ---
 
 <p align="center">
-  I'm Nitin. I've been doing this for 15 years and I still find it genuinely interesting.<br/>
-  My day job is making sure the platform stays out of the way — fast deploys, safe infra, no surprises at 2am.<br/>
-  I own CDN, DNS, WAF, and edge functions at org scale. I write Terraform like I mean it.<br/>
-  I've broken enough things in prod to know how to build them so they don't break again.
+  Most platform teams are expensive YAML wranglers. I build platforms that make developers faster and ops teams redundant.<br/>
+  15 years. 40+ AWS accounts. Millions of requests. Zero tolerance for manual processes.<br/>
+  If it's not in Git, it doesn't exist. If it's not automated, it's a future incident waiting to happen.<br/>
+  I don't follow platform best practices — I write them.
 </p>
 
 ---
 
-## ⚡ What I Actually Work On
+## ⚡ What I'm Building
 
 | | |
 |--------|------------|
-| ☁️ **Edge & CDN** | I manage global CDN, WAF, and DNS for an entire org. When something goes wrong at the edge, it's my phone. |
-| ⚙️ **Platform Engineering** | Kubernetes clusters on EKS and OpenShift, Linkerd for mTLS, KEDA for event-driven scaling — the whole stack teams build on top of. |
-| 🛡️ **Policy as Code** | I don't just write policies — I make sure they're enforced at admission time, not discovered in a post-incident review. OPA, Kyverno, Gatekeeper. |
-| 🔒 **Cloud & IAM** | 40+ account AWS org, built from scratch. OIDC everywhere, no long-lived keys, Terraform modules that actually get reused. |
-| 🤖 **AI & Observability** | I build AI-assisted workflows and Claude Code skills for platform work. Dynatrace for observability, anomaly detection before users notice. |
+| ☁️ **Edge & CDN** | Global CDN, WAF, DNS — owned end to end. When the internet breaks, I'm the one who fixes it. |
+| ⚙️ **Platform Engineering** | EKS, OpenShift, Linkerd, KEDA, FluxCD, ArgoCD. Not a demo cluster — the thing hundreds of engineers deploy to every day. |
+| 🛡️ **Policy as Code** | Bad config doesn't reach prod. It gets rejected at the door. OPA, Kyverno, Gatekeeper — guardrails with teeth. |
+| 🔒 **Cloud & IAM** | Built a 40+ account AWS org from zero. No console cowboys. No long-lived keys. OIDC or nothing. |
+| 🤖 **AI × Platform** | I'm not waiting for AI to mature — I'm already shipping Claude Code skills, LLM workflows, and AI-assisted ops in production. |
 
 ---
 
-## 🚀 Something I Built
+## 🚀 Open Source
 
 ### [platform-skills](https://github.com/nitinjain999/platform-skills)
 
-I got tired of Claude giving generic platform advice, so I built a proper skill for it. It knows Kubernetes, Terraform, GitOps, KEDA, Linkerd, OPA, Kyverno, AWS — the actual stuff you deal with in production. Every pattern in there came from something real that happened.
+Most AI assistants give platform advice that would get you paged at 3am. I built platform-skills because generic answers kill production systems. It's a Claude Code skill that actually knows Kubernetes, Terraform, GitOps, KEDA, Linkerd, OPA, Kyverno, AWS — patterns from real incidents, not documentation summaries. Use it or stay slow.
 
 [![Stars](https://img.shields.io/github/stars/nitinjain999/platform-skills?style=social)](https://github.com/nitinjain999/platform-skills)
 [![Release](https://img.shields.io/github/v/release/nitinjain999/platform-skills)](https://github.com/nitinjain999/platform-skills/releases)
@@ -82,18 +82,18 @@ I got tired of Claude giving generic platform advice, so I built a proper skill 
 
 ## 🏗️ Infrastructure as Code
 
-> If you're clicking around in the AWS console to make changes, we need to talk.
+> The cloud is not a place you click around in. It's a codebase.
 
-Infrastructure is just code. It gets reviewed, tested, promoted through environments, and tracked in Git. I've seen what happens when it isn't — I've cleaned up enough of those messes.
+I don't do snowflake infrastructure. Every resource is Terraform. Every cluster state is Git. Every secret is in a vault. Every policy is enforced at admission — not discovered in an incident retro.
 
 | | |
 |----------|---------------|
-| **Terraform** | Proper modules, shared across 40+ accounts. State in S3 with locking. CI pipelines use OIDC — nobody has a secret key sitting in their `.env`. |
-| **GitOps** | FluxCD watches Git, not a human. Kustomize overlays keep environments honest. HelmRelease objects so Helm upgrades go through the same review as everything else. |
-| **Policy as Code** | Kyverno catches bad manifests at admission — before they land, not after. OPA/Gatekeeper for the tricky cross-namespace stuff. |
-| **Helm** | Internal platform charts with schema-validated values. If `helm unittest` doesn't pass, it doesn't ship. |
-| **Secrets** | External Secrets Operator pulling from AWS Secrets Manager. Nothing sensitive touches Git. If I find plaintext in a repo, it's an incident. |
-| **State hygiene** | `terraform plan` is mandatory in CI, blast radius is part of every review, and service boundaries have their own state files. One mistake shouldn't take down everything. |
+| **Terraform** | Reusable modules across 40+ accounts. Remote state, DynamoDB locking, OIDC auth in CI. If you have an `AWS_SECRET_ACCESS_KEY` in your env, you're doing it wrong. |
+| **GitOps** | FluxCD is the operator. Git is the source of truth. Humans don't `kubectl apply` in prod — that's what the reconciler is for. |
+| **Policy as Code** | Kyverno at admission. OPA/Gatekeeper for cross-namespace. Bad config gets rejected before it causes an incident, not after. |
+| **Helm** | Schema-validated values. `helm unittest` in CI. If the chart doesn't pass tests, it doesn't go anywhere near a cluster. |
+| **Secrets** | External Secrets Operator + AWS Secrets Manager. Plaintext in Git is a P0 incident. No exceptions. |
+| **State discipline** | `terraform plan` is mandatory and reviewed. Blast radius is documented. State files are scoped per service. One bad apply doesn't cascade. |
 
 <p align="left">
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
@@ -111,15 +111,13 @@ Infrastructure is just code. It gets reviewed, tested, promoted through environm
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="180" />
-  &nbsp;
-  <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nitinjain999&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&card_width=450" height="195" />
+  <img src="https://streak-stats.demolab.com?user=nitinjain999&theme=tokyonight&hide_border=true&card_width=450" height="195" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css" height="220" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nitinjain999&theme=tokyonight&utcOffset=1" height="220" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinjain999&layout=donut-vertical&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css&card_width=450" height="300" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nitinjain999&theme=tokyonight&utcOffset=1" height="300" />
 </p>
 
 <p align="center">
@@ -146,7 +144,7 @@ Infrastructure is just code. It gets reviewed, tested, promoted through environm
 
 ## 🤝 Let's Connect
 
-If you're building a platform, untangling a gnarly Terraform state, or just want to talk through a GitOps architecture — reach out. I like these conversations.
+Building a platform? Drowning in YAML? Made a Terraform mistake you can't undo? I've seen worse. Let's talk.
 
 <p align="left">
   <a href="https://github.com/nitinjain999">
