@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00B4D8&center=true&vCenter=true&width=750&height=45&lines=Platform+Engineer.+15+years.+Still+shipping.;Kubernetes+%C2%B7+EKS+%C2%B7+OpenShift+%C2%B7+Linkerd+%C2%B7+KEDA;GitOps+with+FluxCD+and+ArgoCD+at+scale;Policy+as+Code+%E2%80%94+OPA+%C2%B7+Kyverno+%C2%B7+Gatekeeper;AI%2FLLM+workflows+%C2%B7+Dynatrace+%C2%B7+Anomaly+Detection;CDN+%C2%B7+WAF+%C2%B7+DNS+%C2%B7+Edge+Functions+at+org+scale;I+build+platforms+teams+trust." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00B4D8&center=true&vCenter=true&width=750&height=45&lines=Platform+Engineer.+15+years.+Still+shipping.;AWS+%26+Azure+Landing+Zones+at+org+scale;Kubernetes+%C2%B7+EKS+%C2%B7+OpenShift+%C2%B7+Linkerd+%C2%B7+KEDA;GitOps+with+FluxCD+and+ArgoCD;Policy+as+Code+%E2%80%94+OPA+%C2%B7+Kyverno+%C2%B7+Gatekeeper;Terraform+%C2%B7+IaC+%C2%B7+GitOps+%C2%B7+No+manual+changes;AI%2FLLM+workflows+in+production%2C+not+demos;I+don%27t+follow+best+practices.+I+write+them." alt="Typing SVG" />
   </a>
 </p>
 
@@ -36,7 +36,7 @@
 | ☁️ **Edge & CDN** | Global CDN, WAF, DNS — owned end to end. When the internet breaks, I'm the one who fixes it. |
 | ⚙️ **Platform Engineering** | EKS, OpenShift, Linkerd, KEDA, FluxCD, ArgoCD. Not a demo cluster — the thing hundreds of engineers deploy to every day. |
 | 🛡️ **Policy as Code** | Bad config doesn't reach prod. It gets rejected at the door. OPA, Kyverno, Gatekeeper — guardrails with teeth. |
-| 🔒 **Cloud & IAM** | Built a 40+ account AWS org from zero. No console cowboys. No long-lived keys. OIDC or nothing. |
+| 🏢 **Cloud Landing Zones** | Multi-account AWS and Azure foundations at org scale — networking, identity, guardrails, account vending, all Terraformed. |
 | 🤖 **AI × Platform** | I'm not waiting for AI to mature — I'm already shipping Claude Code skills, LLM workflows, and AI-assisted ops in production. |
 
 ---
@@ -80,30 +80,52 @@ Most AI assistants give platform advice that would get you paged at 3am. I built
 
 ---
 
+## 🌍 AWS & Azure Landing Zones
+
+> A landing zone isn't a project. It's the foundation every team in the org builds on — get it wrong and you're paying the interest forever.
+
+I've designed and operated multi-cloud landing zones at org scale — not as a consulting exercise, as a day job.
+
+| | |
+|----------|---------------|
+| **AWS** | 40+ account org with Control Tower, SCPs, and AWS Organizations. Centralised networking via Transit Gateway. Security Hub, GuardDuty, Config Rules enforced org-wide. Account vending via Terraform — new accounts in minutes, not tickets. |
+| **Azure** | Management Group hierarchy, Policy initiatives at scale, Azure Landing Zone accelerator patterns. Hub-spoke networking with Azure Firewall. Entra ID integration and PIM for just-in-time access. |
+| **Identity** | OIDC everywhere — GitHub Actions, EKS, Azure Workload Identity. No static credentials. No exceptions. IAM roles scoped per workload, not per team. |
+| **Networking** | VPC design that doesn't paint you into a corner. IPAM before you run out of `/16`s. PrivateLink over public endpoints. DNS that doesn't lie to you. |
+| **Guardrails** | SCPs and Azure Policy that say no before a developer can say yes. Preventive > detective > reactive. |
+
+<p align="left">
+  <img src="https://img.shields.io/badge/AWS_Control_Tower-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure_Landing_Zone-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS_Organizations-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Transit_Gateway-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure_Policy-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Entra_ID-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+</p>
+
+---
+
 ## 🏗️ Infrastructure as Code
 
 > The cloud is not a place you click around in. It's a codebase.
 
-I don't do snowflake infrastructure. Every resource is Terraform. Every cluster state is Git. Every secret is in a vault. Every policy is enforced at admission — not discovered in an incident retro.
+Every resource is Terraform. Every cluster state is Git. Every secret is in a vault. Every policy is enforced at admission — not discovered in a retro.
 
 | | |
 |----------|---------------|
-| **Terraform** | Reusable modules across 40+ accounts. Remote state, DynamoDB locking, OIDC auth in CI. If you have an `AWS_SECRET_ACCESS_KEY` in your env, you're doing it wrong. |
+| **Terraform** | Reusable modules across every account. Remote state, DynamoDB locking, OIDC auth in CI. If you have an `AWS_SECRET_ACCESS_KEY` in your `.env`, you're doing it wrong. |
 | **GitOps** | FluxCD is the operator. Git is the source of truth. Humans don't `kubectl apply` in prod — that's what the reconciler is for. |
-| **Policy as Code** | Kyverno at admission. OPA/Gatekeeper for cross-namespace. Bad config gets rejected before it causes an incident, not after. |
-| **Helm** | Schema-validated values. `helm unittest` in CI. If the chart doesn't pass tests, it doesn't go anywhere near a cluster. |
-| **Secrets** | External Secrets Operator + AWS Secrets Manager. Plaintext in Git is a P0 incident. No exceptions. |
-| **State discipline** | `terraform plan` is mandatory and reviewed. Blast radius is documented. State files are scoped per service. One bad apply doesn't cascade. |
+| **Helm** | Schema-validated values. `helm unittest` in CI. If the chart doesn't pass, it doesn't go near a cluster. |
+| **Secrets** | External Secrets Operator + AWS Secrets Manager / Azure Key Vault. Plaintext in Git is a P0 incident. No exceptions. |
+| **State discipline** | `terraform plan` is mandatory and reviewed. Blast radius is documented. State files are scoped per service boundary. One bad apply doesn't cascade. |
 
 <p align="left">
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
   <img src="https://img.shields.io/badge/FluxCD-5468FF?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
   <img src="https://img.shields.io/badge/Kustomize-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/OPA-7D3C98?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kyverno-326CE5?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/External_Secrets-FF6B35?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS_CDK-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure_Key_Vault-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
 </p>
 
 ---
