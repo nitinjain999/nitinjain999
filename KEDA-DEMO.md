@@ -235,20 +235,3 @@ ClusterTriggerAuthentication
 | 7 | `400 Illegal transform operator :sum` | `.count` metrics don't support `:sum` transform | Remove `:sum` or use different metric |
 | 8 | `nginx_connections_active` always `3` in AMP under wget load | wget requests complete in `<1ms`; AMP 60s scraper misses them | Switch to `nc` persistent connections (held open 20s) |
 
----
-
-## 📁 Repository Layout
-
-```
-gitops-helm/
-└── dataplatform-devtest-eks/releases/platform-engineering/keda-testing/
-    └── scaledobject.yaml
-
-aws-eks-platform/
-└── dataplatform-clusters/devtest/releases/keda/
-    ├── dt.yaml                   # ClusterTriggerAuthentication
-    └── dt-keda-token.yaml        # SealedSecret (encrypted DT token + host)
-
-~/Desktop/keda/
-└── demo-scaling.sh               # interactive demo script
-```
