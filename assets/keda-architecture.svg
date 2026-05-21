@@ -245,13 +245,13 @@
   <circle r="5" class="dot-hpa1"/>
   <circle r="5" class="dot-hpa2"/>
 
-  <!-- Legend -->
-  <rect x="30" y="460" width="90" height="16" rx="3" fill="none" stroke="#b4a0e5" stroke-width="1"/>
-  <text x="75" y="472" font-family="monospace" font-size="9" fill="#b4a0e5" text-anchor="middle">Dynatrace flow</text>
-  <rect x="130" y="460" width="80" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="1"/>
-  <text x="170" y="472" font-family="monospace" font-size="9" fill="#ff9900" text-anchor="middle">AMP flow</text>
-  <rect x="220" y="460" width="80" height="16" rx="3" fill="none" stroke="#4a9eff" stroke-width="1"/>
-  <text x="260" y="472" font-family="monospace" font-size="9" fill="#4a9eff" text-anchor="middle">KEDA → HPA</text>
-  <rect x="310" y="460" width="80" height="16" rx="3" fill="none" stroke="#e040fb" stroke-width="1"/>
-  <text x="350" y="472" font-family="monospace" font-size="9" fill="#e040fb" text-anchor="middle">HPA → scale</text>
+  <!-- Legend (bottom-right, away from deployment boxes) -->
+  <rect x="560" y="460" width="90" height="16" rx="3" fill="none" stroke="#b4a0e5" stroke-width="1"/>
+  <text x="605" y="472" font-family="monospace" font-size="9" fill="#b4a0e5" text-anchor="middle">Dynatrace flow</text>
+  <rect x="660" y="460" width="80" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="1"/>
+  <text x="700" y="472" font-family="monospace" font-size="9" fill="#ff9900" text-anchor="middle">AMP flow</text>
+  <rect x="750" y="460" width="80" height="16" rx="3" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <text x="790" y="472" font-family="monospace" font-size="9" fill="#4a9eff" text-anchor="middle">KEDA → HPA</text>
+  <rect x="750" y="480" width="80" height="16" rx="3" fill="none" stroke="#e040fb" stroke-width="1"/>
+  <text x="790" y="492" font-family="monospace" font-size="9" fill="#e040fb" text-anchor="middle">HPA → scale</text>
 </svg>

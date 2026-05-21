@@ -12,14 +12,14 @@
 
       /* Replica bars */
       @keyframes bar-grow1 {
-        0%,20%   { height: 20px; y: 190px; }
-        30%,70%  { height: 80px; y: 130px; }
-        80%,100% { height: 20px; y: 190px; }
+        0%,20%   { height: 4px;  y: 228px; }
+        30%,70%  { height: 31px; y: 199px; }
+        80%,100% { height: 4px;  y: 228px; }
       }
       @keyframes bar-grow2 {
-        0%,40%   { height: 20px; y: 190px; }
-        50%,70%  { height: 120px; y: 90px; }
-        80%,100% { height: 20px; y: 190px; }
+        0%,40%   { height: 4px;  y: 228px; }
+        50%,70%  { height: 68px; y: 162px; }
+        80%,100% { height: 4px;  y: 228px; }
       }
 
       /* DT trigger light */
@@ -133,9 +133,9 @@
   <line x1="88" y1="183" x2="840" y2="183" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
   <line x1="88" y1="163" x2="840" y2="163" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
 
-  <!-- Animated replica bars -->
-  <rect x="120" width="260" height="20" y="190" class="replica-bar-dt" opacity="0.85"/>
-  <rect x="400" width="200" height="20" y="190" class="replica-bar-amp" opacity="0.85"/>
+  <!-- Animated replica bars (x aligned with phase markers, width = phase duration span) -->
+  <rect x="259" width="191" height="4" y="228" class="replica-bar-dt" opacity="0.85"/>
+  <rect x="454" width="191" height="4" y="228" class="replica-bar-amp" opacity="0.85"/>
 
   <!-- Baseline replica line -->
   <line x1="88" y1="210" x2="840" y2="210" stroke="#00c44f" stroke-width="2" stroke-dasharray="5,3" opacity="0.4"/>
