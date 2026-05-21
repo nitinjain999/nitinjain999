@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      text { font-family: monospace; }
+
+      /* Row highlight cycles through each field every 2s */
+      @keyframes hl { 0%,10%{opacity:1} 15%,100%{opacity:0} }
+      .hl0  { animation: hl 14s ease-in-out infinite 0s;    fill:#ffffff10; }
+      .hl1  { animation: hl 14s ease-in-out infinite 2s;    fill:#ffffff10; }
+      .hl2  { animation: hl 14s ease-in-out infinite 4s;    fill:#ffffff10; }
+      .hl3  { animation: hl 14s ease-in-out infinite 6s;    fill:#ffffff10; }
+      .hl4  { animation: hl 14s ease-in-out infinite 8s;    fill:#ffffff10; }
+      .hl5  { animation: hl 14s ease-in-out infinite 10s;   fill:#ffffff10; }
+      .hl6  { animation: hl 14s ease-in-out infinite 12s;   fill:#ffffff10; }
+
+      /* Tooltip fades */
+      @keyframes tip { 0%,10%{opacity:1} 15%,100%{opacity:0} }
+      .tip0 { animation: tip 14s ease-in-out infinite 0s; }
+      .tip1 { animation: tip 14s ease-in-out infinite 2s; }
+      .tip2 { animation: tip 14s ease-in-out infinite 4s; }
+      .tip3 { animation: tip 14s ease-in-out infinite 6s; }
+      .tip4 { animation: tip 14s ease-in-out infinite 8s; }
+      .tip5 { animation: tip 14s ease-in-out infinite 10s; }
+      .tip6 { animation: tip 14s ease-in-out infinite 12s; }
+
+      /* Pulse on active tip box */
+      @keyframes tipglow { 0%,100%{opacity:1} 50%{opacity:0.7} }
+      .tipbox { animation: tipglow 1.5s ease-in-out infinite; }
+
+      .lbl  { font-size:11px; fill:#4a9eff; }
+      .val  { font-size:11px; fill:#79c0ff; }
+      .cmt  { font-size:10px; fill:#8b949e; }
+      .key  { font-size:11px; fill:#ff9900; }
+      .hdr  { font-size:10px; fill:#555; }
+    </style>
+  </defs>
+
+  <rect width="900" height="560" class="bg"/>
+
+  <!-- Title -->
+  <text x="450" y="25" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="bold">📋 ScaledObject — Every Field Explained</text>
+  <text x="450" y="40" font-size="9" fill="#555" text-anchor="middle">Field highlights cycle automatically — each field lights up with its explanation</text>
+
+  <!-- ─── YAML panel (left, x=20..430) ─── -->
+  <rect x="20" y="50" width="420" height="495" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+
+  <!-- row highlights (behind text) -->
+  <rect x="22" y="93"  width="416" height="16" rx="3" class="hl0"/>
+  <rect x="22" y="113" width="416" height="16" rx="3" class="hl1"/>
+  <rect x="22" y="133" width="416" height="16" rx="3" class="hl2"/>
+  <rect x="22" y="153" width="416" height="16" rx="3" class="hl3"/>
+  <rect x="22" y="173" width="416" height="16" rx="3" class="hl4"/>
+  <rect x="22" y="205" width="416" height="16" rx="3" class="hl5"/>
+  <rect x="22" y="237" width="416" height="32" rx="3" class="hl6"/>
+
+  <!-- YAML text -->
+  <text x="36" y="70"  class="hdr">apiVersion: keda.sh/v1alpha1</text>
+  <text x="36" y="84"  class="hdr">kind: ScaledObject</text>
+  <text x="36" y="98"  class="hdr">spec:</text>
+
+  <text x="48" y="106" class="lbl">scaleTargetRef:</text>
+  <text x="60" y="120">  <tspan class="lbl">name: </tspan><tspan class="val">nginx-keda-sample</tspan></text>
+  <text x="48" y="136"><tspan class="lbl">minReplicaCount: </tspan><tspan class="val">1</tspan></text>
+  <text x="48" y="152"><tspan class="lbl">maxReplicaCount: </tspan><tspan class="val">10</tspan></text>
+  <text x="48" y="168"><tspan class="lbl">pollingInterval: </tspan><tspan class="val">15</tspan></text>
+  <text x="48" y="184"><tspan class="lbl">cooldownPeriod: </tspan><tspan class="val">60</tspan></text>
+
+  <text x="48" y="200" class="hdr">advanced:</text>
+  <text x="60" y="214" class="hdr">  horizontalPodAutoscalerConfig:</text>
+  <text x="72" y="228" class="hdr">    behavior:</text>
+  <text x="72" y="242" class="hdr">      scaleDown:</text>
+  <text x="84" y="256"><tspan class="lbl">stabilizationWindowSeconds: </tspan><tspan class="val">60</tspan></text>
+
+  <text x="48" y="282" class="hdr">triggers:</text>
+  <text x="48" y="298"><tspan class="hdr">  - type: </tspan><tspan class="val">dynatrace</tspan></text>
+  <text x="60" y="314" class="hdr">    metadata:</text>
+  <text x="72" y="328"><tspan class="key">      threshold: </tspan><tspan class="val">"10"</tspan></text>
+  <text x="72" y="344"><tspan class="key">      activationThreshold: </tspan><tspan class="val">"7"</tspan></text>
+  <text x="72" y="360"><tspan class="key">      from: </tspan><tspan class="val">"now-2m"</tspan></text>
+
+  <text x="48" y="386"><tspan class="hdr">  - type: </tspan><tspan class="val">prometheus</tspan></text>
+  <text x="60" y="402" class="hdr">    metadata:</text>
+  <text x="72" y="416"><tspan class="key">      threshold: </tspan><tspan class="val">"20"</tspan></text>
+  <text x="72" y="432"><tspan class="key">      activationThreshold: </tspan><tspan class="val">"10"</tspan></text>
+  <text x="72" y="448"><tspan class="key">      query: </tspan><tspan class="val">"sum(nginx_connections_active)"</tspan></text>
+
+  <text x="48" y="474"><tspan class="hdr">  - type: </tspan><tspan class="val">cron</tspan></text>
+  <text x="60" y="490" class="hdr">    metadata:</text>
+  <text x="72" y="504"><tspan class="key">      start: </tspan><tspan class="val">"0 18 * * *"</tspan></text>
+  <text x="72" y="520"><tspan class="key">      desiredReplicas: </tspan><tspan class="val">"1"</tspan></text>
+  <text x="72" y="536"><tspan class="key">      end: </tspan><tspan class="val">"0 6 * * *"</tspan></text>
+
+  <!-- ─── Tooltip panel (right, x=455..880) ─── -->
+
+  <!-- tip0: scaleTargetRef -->
+  <g class="tip0" opacity="0">
+    <rect x="455" y="55" width="425" height="90" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">scaleTargetRef.name</text>
+    <text x="467" y="91"  class="cmt">The Deployment KEDA will scale.</text>
+    <text x="467" y="106" class="cmt">Must match the Deployment name exactly.</text>
+    <text x="467" y="121" class="cmt">Wrong name → KEDA fails silently with Ready:false.</text>
+    <rect x="455" y="150" width="425" height="32" rx="5" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="166" font-size="9" fill="#555">kubectl get scaledobject nginx-keda-sample -n keda-testing</text>
+    <text x="467" y="178" font-size="9" fill="#8b949e">→ check "Ready: True" and "ScaleTarget Found: True"</text>
+  </g>
+
+  <!-- tip1: minReplicaCount -->
+  <g class="tip1" opacity="0">
+    <rect x="455" y="55" width="425" height="120" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">minReplicaCount: 1</text>
+    <text x="467" y="91"  class="cmt">Floor — replicas never drop below this value.</text>
+    <text x="467" y="106" class="cmt">0  = scale-to-zero (saves cost, but 1st request waits ~20s)</text>
+    <text x="467" y="121" class="cmt">1  = always one pod ready (no cold-start, slight cost)</text>
+    <text x="467" y="136" class="cmt">Web apps: use 1.  Batch jobs: use 0.</text>
+    <rect x="455" y="185" width="180" height="38" rx="4" fill="#0d2a0d" stroke="#00c44f" stroke-width="1"/>
+    <text x="465" y="200" font-size="9" fill="#00c44f">minReplicaCount: 1</text>
+    <text x="465" y="214" font-size="9" fill="#555">→ always warm, no cold start</text>
+    <rect x="645" y="185" width="235" height="38" rx="4" fill="#2a1a1a" stroke="#ff4444" stroke-width="1"/>
+    <text x="655" y="200" font-size="9" fill="#ff4444">minReplicaCount: 0</text>
+    <text x="655" y="214" font-size="9" fill="#555">→ zero pods at night, cold start on wake</text>
+  </g>
+
+  <!-- tip2: maxReplicaCount -->
+  <g class="tip2" opacity="0">
+    <rect x="455" y="55" width="425" height="105" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">maxReplicaCount: 10</text>
+    <text x="467" y="91"  class="cmt">Hard ceiling — HPA never exceeds this.</text>
+    <text x="467" y="106" class="cmt">Protects you from: buggy metrics, runaway scaling,</text>
+    <text x="467" y="121" class="cmt">unexpected cost spikes, node exhaustion.</text>
+    <text x="467" y="136" class="cmt">Set based on cluster node capacity and cost budget.</text>
+    <rect x="455" y="168" width="425" height="18" rx="4" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="180" font-size="9" fill="#555">metric=9999  →  ceil(9999/10)=1000  →  capped at  maxReplicaCount=10</text>
+  </g>
+
+  <!-- tip3: pollingInterval -->
+  <g class="tip3" opacity="0">
+    <rect x="455" y="55" width="425" height="120" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">pollingInterval: 15  (seconds)</text>
+    <text x="467" y="91"  class="cmt">How often KEDA calls Dynatrace / AMP to get the metric.</text>
+    <text x="467" y="106" class="cmt">15s → reacts to load spikes within ~15 seconds.</text>
+    <text x="467" y="121" class="cmt">Lower = faster reaction + more API calls (cost!).</text>
+    <text x="467" y="136" class="cmt">SQS scalers: don't poll too fast — AWS charges per request.</text>
+    <rect x="455" y="185" width="425" height="46" rx="4" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="200" font-size="9" fill="#555">t=0s   load spike → connections jump to 100</text>
+    <text x="467" y="213" font-size="9" fill="#555">t=15s  KEDA polls → sees 100 → fires scale-up</text>
+    <text x="467" y="226" font-size="9" fill="#555">          (max lag before KEDA reacts = pollingInterval)</text>
+  </g>
+
+  <!-- tip4: cooldownPeriod -->
+  <g class="tip4" opacity="0">
+    <rect x="455" y="55" width="425" height="120" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">cooldownPeriod: 60  (seconds)</text>
+    <text x="467" y="91"  class="cmt">Wait this long after triggers go inactive before scaling down.</text>
+    <text x="467" y="106" class="cmt">Prevents thrashing on bursty traffic:</text>
+    <text x="467" y="121" class="cmt">  Without:  up → down → up → down every 30s</text>
+    <text x="467" y="136" class="cmt">  With 60s: up → quiet for 60s → down → stable</text>
+    <rect x="455" y="185" width="425" height="32" rx="4" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="200" font-size="9" fill="#555">Like a thermostat: don't cycle heat on/off every 10s.</text>
+    <text x="467" y="213" font-size="9" fill="#555">Wait until it's been cold for a sustained period.</text>
+  </g>
+
+  <!-- tip5: stabilizationWindowSeconds -->
+  <g class="tip5" opacity="0">
+    <rect x="455" y="55" width="425" height="135" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#4a9eff" font-weight="bold">stabilizationWindowSeconds: 60</text>
+    <text x="467" y="91"  class="cmt">Kubernetes HPA keeps a window of past desired-replica values.</text>
+    <text x="467" y="106" class="cmt">It uses the MAXIMUM seen in that window before scaling down.</text>
+    <text x="467" y="121" class="cmt">Default=300s (5 min!) → stays at peak replicas for 5 min.</text>
+    <text x="467" y="136" class="cmt">We set 60s to match cooldownPeriod → fast, predictable ramp-down.</text>
+    <rect x="455" y="200" width="425" height="46" rx="4" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="215" font-size="9" fill="#ff4444">default (300s):  load removed → still 10 replicas for 5 minutes</text>
+    <text x="467" y="228" font-size="9" fill="#00c44f">our value  (60s): load removed → scales to 1 within ~90 seconds</text>
+    <text x="467" y="241" font-size="9" fill="#555">  (cooldownPeriod=60s + stabilizationWindow=60s ≈ 60-90s total)</text>
+  </g>
+
+  <!-- tip6: threshold + activationThreshold -->
+  <g class="tip6" opacity="0">
+    <rect x="455" y="55" width="425" height="165" rx="7" fill="#1a1f2e" stroke="#ff9900" stroke-width="1.5" class="tipbox"/>
+    <text x="467" y="74"  font-size="11" fill="#ff9900" font-weight="bold">threshold  vs  activationThreshold</text>
+    <text x="467" y="91"  class="cmt">activationThreshold:  gate — must EXCEED to make trigger active</text>
+    <text x="467" y="106" class="cmt">threshold:            scaling target — drives the replica formula</text>
+    <text x="467" y="127" font-size="10" fill="#e6edf3">desiredReplicas = ceil( metric / threshold )</text>
+    <rect x="455" y="140" width="425" height="76" rx="4" fill="#161b22" stroke="#21262d"/>
+    <text x="467" y="156" font-size="9" fill="#555">metric=4  activationThreshold=7:  4 ≤ 7  →  INACTIVE  →  no scale</text>
+    <text x="467" y="170" font-size="9" fill="#00c44f">metric=100 activationThreshold=7:  100 &gt; 7  →  ACTIVE</text>
+    <text x="467" y="184" font-size="9" fill="#00c44f">  ceil(100 / 10) = 10 replicas</text>
+    <text x="467" y="200" font-size="9" fill="#555">activationThreshold set above idle baseline (3-6) to prevent</text>
+    <text x="467" y="212" font-size="9" fill="#555">permanent "active" state from keep-alive connections at idle.</text>
+  </g>
+
+  <!-- static legend row at bottom -->
+  <rect x="20" y="548" width="860" height="1" fill="#21262d"/>
+  <text x="30"  y="558" font-size="8" fill="#4a9eff">■ spec fields</text>
+  <text x="130" y="558" font-size="8" fill="#ff9900">■ trigger fields</text>
+  <text x="250" y="558" font-size="8" fill="#555">highlights cycle · each field lights up with explanation on the right</text>
+</svg>

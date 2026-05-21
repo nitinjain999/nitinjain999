@@ -110,7 +110,23 @@ Why 5?  Because with 5 replicas, each replica handles 47/5 = 9.4 connections
 
 ---
 
+## ♻️ How Scaling Decisions Are Made — Animated
+
+<div align="center">
+<img src="assets/keda-scaling-lifecycle.svg" alt="KEDA scaling decision loop" width="900"/>
+</div>
+
+> Every 15 seconds KEDA fetches the metric, checks the activation gate, runs the formula, and tells the HPA. Watch the state bar at the bottom cycle through **IDLE → ACTIVE → COOLDOWN**.
+
+---
+
 ## 🎯 ScaledObject — Every Field Explained
+
+<div align="center">
+<img src="assets/keda-scaledobject-fields.svg" alt="ScaledObject fields explained — animated" width="900"/>
+</div>
+
+> Fields highlight one by one — watch the right panel for the explanation of each one.
 
 A `ScaledObject` is the KEDA resource you create to tell KEDA:
 - **what** to scale (your Deployment)

@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="900" height="310">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      text { font-family: monospace; }
+
+      /* 12s loop: idle=0-25%, active=30-70%, cooldown=75-100% */
+      .s-idle { animation: show-idle 12s ease-in-out infinite both; }
+      .s-act  { animation: show-act  12s ease-in-out infinite both; }
+      .s-cool { animation: show-cool 12s ease-in-out infinite both; }
+
+      @keyframes show-idle {
+        0%,22%  { opacity:1 }
+        27%,100%{ opacity:0 }
+      }
+      @keyframes show-act {
+        0%,27%  { opacity:0 }
+        32%,68% { opacity:1 }
+        73%,100%{ opacity:0 }
+      }
+      @keyframes show-cool {
+        0%,72%  { opacity:0 }
+        77%,100%{ opacity:1 }
+      }
+
+      /* Box glows */
+      @keyframes glow-keda {
+        0%,100% { filter: drop-shadow(0 0 4px #4a9eff); }
+        50%     { filter: drop-shadow(0 0 14px #4a9eff); }
+      }
+      @keyframes glow-inactive {
+        0%,22%  { filter: drop-shadow(0 0 8px #ff4444); }
+        27%,100%{ filter: none; }
+      }
+      @keyframes glow-formula {
+        0%,27%  { filter: none; }
+        32%,68% { filter: drop-shadow(0 0 8px #00c44f); }
+        73%,100%{ filter: none; }
+      }
+      .keda-glow     { animation: glow-keda     2s   ease-in-out infinite; }
+      .inactive-glow { animation: glow-inactive 12s  ease-in-out infinite; }
+      .formula-glow  { animation: glow-formula  12s  ease-in-out infinite; }
+
+      /* Poll rings above KEDA box */
+      @keyframes poll-ring {
+        0%   { r:3;  opacity:1; }
+        100% { r:16; opacity:0; }
+      }
+      .pr1 { fill:none; stroke:#4a9eff; stroke-width:1.5; animation: poll-ring 2s ease-out infinite; }
+      .pr2 { fill:none; stroke:#4a9eff; stroke-width:1;   animation: poll-ring 2s ease-out infinite 0.7s; }
+
+      /* Packets — always-flowing poll (blue) */
+      .pkt-poll  {
+        fill:#4a9eff;
+        offset-path: path("M 115 110 L 338 110");
+        offset-rotate: 0deg;
+        animation: pkt-always 2s linear infinite;
+      }
+      .pkt-poll2 {
+        fill:#4a9eff;
+        offset-path: path("M 115 110 L 338 110");
+        offset-rotate: 0deg;
+        animation: pkt-always 2s linear infinite 1s;
+      }
+      @keyframes pkt-always {
+        0%   { opacity:0; offset-distance:0%; }
+        10%  { opacity:1; }
+        90%  { opacity:1; }
+        100% { opacity:0; offset-distance:100%; }
+      }
+
+      /* Packet — NO path (only during idle 0-23%) */
+      .pkt-no {
+        fill:#ff4444;
+        offset-path: path("M 390 142 L 390 195");
+        offset-rotate: 0deg;
+        animation: pkt-no-anim 12s linear infinite;
+      }
+      @keyframes pkt-no-anim {
+        0%       { opacity:0; offset-distance:0%; }
+        4%       { opacity:1; offset-distance:0%; }
+        19%      { opacity:1; offset-distance:100%; }
+        21%      { opacity:0; offset-distance:100%; }
+        21.5%    { opacity:0; offset-distance:0%; }
+        100%     { opacity:0; offset-distance:0%; }
+      }
+
+      /* Packets — YES path (only during active 30-70%) */
+      .pkt-yes {
+        fill:#00c44f;
+        offset-path: path("M 440 110 L 820 110");
+        offset-rotate: 0deg;
+        animation: pkt-yes-anim 12s linear infinite;
+      }
+      .pkt-yes2 {
+        fill:#00c44f;
+        offset-path: path("M 440 110 L 820 110");
+        offset-rotate: 0deg;
+        animation: pkt-yes-anim 12s linear infinite 1.5s;
+      }
+      @keyframes pkt-yes-anim {
+        0%,28%   { opacity:0; offset-distance:0%; }
+        32%      { opacity:1; offset-distance:0%; }
+        67%      { opacity:1; offset-distance:100%; }
+        70%      { opacity:0; offset-distance:100%; }
+        70.5%    { opacity:0; offset-distance:0%; }
+        100%     { opacity:0; offset-distance:0%; }
+      }
+    </style>
+    <marker id="a0" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#555"/>
+    </marker>
+    <marker id="ag" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#00c44f"/>
+    </marker>
+    <marker id="ar" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#ff4444"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="310" class="bg"/>
+
+  <!-- Title -->
+  <text x="450" y="28" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="bold">⚡ KEDA Scaling Decision Loop — Runs Every 15 Seconds</text>
+
+  <!-- ─── BOX 1: Metric Source ─── -->
+  <rect x="15" y="83" width="100" height="54" rx="7" fill="#1a1f2e" stroke="#b4a0e5" stroke-width="1.5"/>
+  <text x="65" y="104" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold">Metric</text>
+  <text x="65" y="118" font-size="9"  fill="#8b949e" text-anchor="middle">DT · AMP</text>
+  <text x="65" y="131" font-size="9"  fill="#8b949e"  text-anchor="middle" class="s-idle">value ≈ 4</text>
+  <text x="65" y="131" font-size="9"  fill="#ff9900"  text-anchor="middle" class="s-act"  opacity="0">value = 100</text>
+  <text x="65" y="131" font-size="9"  fill="#00c44f"  text-anchor="middle" class="s-cool" opacity="0">value ↓ 4</text>
+
+  <!-- Arrow: Metric → KEDA -->
+  <path d="M 115 110 L 163 110" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a0)"/>
+
+  <!-- ─── BOX 2: KEDA Operator ─── -->
+  <circle cx="230" cy="74" class="pr1"/>
+  <circle cx="230" cy="74" class="pr2"/>
+  <text x="230" y="66" font-size="8" fill="#4a9eff" text-anchor="middle">every 15s</text>
+  <rect x="165" y="83" width="130" height="54" rx="7" fill="#1a1f2e" stroke="#4a9eff" stroke-width="1.5" class="keda-glow"/>
+  <text x="230" y="104" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold">KEDA Operator</text>
+  <text x="230" y="118" font-size="9"  fill="#8b949e" text-anchor="middle">reads ScaledObject</text>
+  <text x="230" y="131" font-size="9"  fill="#4a9eff" text-anchor="middle">fetches metric ↗</text>
+
+  <!-- Arrow: KEDA → Gate -->
+  <path d="M 295 110 L 338 110" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a0)"/>
+
+  <!-- ─── Gate diamond: center (390,110) ─── -->
+  <polygon points="390,78 440,110 390,142 340,110" fill="#1c1a00" stroke="#e6b800" stroke-width="1.5"/>
+  <text x="390" y="105" font-size="8" fill="#e6b800" text-anchor="middle" font-weight="bold">metric &gt;</text>
+  <text x="390" y="116" font-size="8" fill="#e6b800" text-anchor="middle" font-weight="bold">activation</text>
+  <text x="390" y="127" font-size="8" fill="#e6b800" text-anchor="middle" font-weight="bold">Threshold?</text>
+
+  <text x="458" y="106" font-size="9" fill="#00c44f">YES →</text>
+  <text x="397" y="163" font-size="9" fill="#ff4444">NO ↓</text>
+
+  <!-- Arrow: Gate → Formula -->
+  <path d="M 440 110 L 485 110" stroke="#00c44f" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+  <!-- Arrow: Gate → INACTIVE -->
+  <path d="M 390 142 L 390 193" stroke="#ff4444" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+
+  <!-- ─── INACTIVE box ─── -->
+  <rect x="320" y="195" width="140" height="52" rx="7" fill="#2a1a1a" stroke="#ff4444" stroke-width="1.5" class="inactive-glow"/>
+  <text x="390" y="215" font-size="10" fill="#ff4444" text-anchor="middle" font-weight="bold">INACTIVE</text>
+  <text x="390" y="229" font-size="8"  fill="#8b949e" text-anchor="middle">stay at minReplicaCount</text>
+  <text x="390" y="242" font-size="8"  fill="#8b949e" text-anchor="middle">no scale event fired</text>
+
+  <!-- ─── BOX 3: Formula ─── -->
+  <rect x="487" y="83" width="145" height="54" rx="7" fill="#1a2a1a" stroke="#00c44f" stroke-width="1.5" class="formula-glow"/>
+  <text x="559" y="103" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold">Formula</text>
+  <text x="559" y="116" font-size="9"  fill="#00c44f" text-anchor="middle">ceil(metric / threshold)</text>
+  <text x="559" y="130" font-size="9"  fill="#555"    text-anchor="middle" class="s-idle">— (trigger inactive)</text>
+  <text x="559" y="130" font-size="9"  fill="#00c44f" text-anchor="middle" class="s-act"  opacity="0">ceil(100/10) = 10 ✓</text>
+  <text x="559" y="130" font-size="9"  fill="#4a9eff" text-anchor="middle" class="s-cool" opacity="0">result dropping…</text>
+
+  <!-- Arrow: Formula → HPA -->
+  <path d="M 632 110 L 668 110" stroke="#00c44f" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+  <!-- ─── BOX 4: HPA ─── -->
+  <rect x="670" y="83" width="90" height="54" rx="7" fill="#2a1a2e" stroke="#e040fb" stroke-width="1.5"/>
+  <text x="715" y="104" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold">k8s HPA</text>
+  <text x="715" y="118" font-size="8"  fill="#8b949e" text-anchor="middle">Horizontal</text>
+  <text x="715" y="130" font-size="8"  fill="#8b949e" text-anchor="middle">PodAutoscaler</text>
+
+  <!-- Arrow: HPA → Pods -->
+  <path d="M 760 110 L 818 110" stroke="#e040fb" stroke-width="1.5" fill="none" marker-end="url(#a0)"/>
+
+  <!-- ─── BOX 5: Pods ─── -->
+  <rect x="820" y="83" width="70" height="54" rx="7" fill="#0d2a0d" stroke="#00c44f" stroke-width="1.5"/>
+  <text x="855" y="103" font-size="10" fill="#e6edf3" text-anchor="middle" font-weight="bold">Pods</text>
+  <text x="855" y="119" font-size="16" fill="#00c44f" text-anchor="middle" font-weight="bold" class="s-idle">1</text>
+  <text x="855" y="119" font-size="16" fill="#ff9900" text-anchor="middle" font-weight="bold" class="s-act"  opacity="0">10</text>
+  <text x="855" y="119" font-size="16" fill="#4a9eff" text-anchor="middle" font-weight="bold" class="s-cool" opacity="0">↓</text>
+  <text x="855" y="132" font-size="7"  fill="#8b949e" text-anchor="middle" class="s-idle">min floor</text>
+  <text x="855" y="132" font-size="7"  fill="#ff9900" text-anchor="middle" class="s-act"  opacity="0">scaled!</text>
+  <text x="855" y="132" font-size="7"  fill="#4a9eff" text-anchor="middle" class="s-cool" opacity="0">cooling</text>
+
+  <!-- Packet dots -->
+  <circle r="5" class="pkt-poll"/>
+  <circle r="5" class="pkt-poll2"/>
+  <circle r="5" class="pkt-no"/>
+  <circle r="5" class="pkt-yes"/>
+  <circle r="5" class="pkt-yes2"/>
+
+  <!-- ─── State bar ─── -->
+  <rect x="15" y="268" width="870" height="28" rx="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <text x="450" y="286" font-size="9" fill="#555"    text-anchor="middle" class="s-idle">IDLE ·  metric(4) ≤ activationThreshold(7)  →  trigger INACTIVE  →  stays at 1 replica</text>
+  <text x="450" y="286" font-size="9" fill="#00c44f" text-anchor="middle" class="s-act"  opacity="0">ACTIVE ·  metric(100) &gt; activationThreshold(7)  →  ceil(100/10) = 10  →  HPA scales to 10 replicas</text>
+  <text x="450" y="286" font-size="9" fill="#4a9eff" text-anchor="middle" class="s-cool" opacity="0">COOLDOWN ·  metric drops to 4  →  triggers INACTIVE  →  cooldownPeriod=60s passes  →  HPA scales to 1</text>
+</svg>
