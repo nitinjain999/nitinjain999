@@ -11,15 +11,16 @@
       @keyframes fadein3 { 0%{opacity:0.4} 75%{opacity:1} 100%{opacity:0.4} }
 
       /* Replica bars */
+      /* bar bottom = y=223 (the "1" gridline); 5-replicas line = y=183; 10-replicas line = y=163 */
       @keyframes bar-grow1 {
-        0%,20%   { height: 4px;  y: 228px; }
-        30%,70%  { height: 31px; y: 199px; }
-        80%,100% { height: 4px;  y: 228px; }
+        0%,22%   { height: 2px;  y: 222px; }
+        32%,68%  { height: 40px; y: 183px; }
+        80%,100% { height: 2px;  y: 222px; }
       }
       @keyframes bar-grow2 {
-        0%,40%   { height: 4px;  y: 228px; }
-        50%,70%  { height: 68px; y: 162px; }
-        80%,100% { height: 4px;  y: 228px; }
+        0%,42%   { height: 2px;  y: 222px; }
+        52%,68%  { height: 60px; y: 163px; }
+        80%,100% { height: 2px;  y: 222px; }
       }
 
       /* DT trigger light */
