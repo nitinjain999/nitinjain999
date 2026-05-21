@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .box { rx: 8; ry: 8; }
+      .nginx   { fill: #009639; stroke: #00c44f; stroke-width: 1.5; }
+      .dt      { fill: #1a1a2e; stroke: #b4a0e5; stroke-width: 1.5; }
+      .amp     { fill: #1a2a1a; stroke: #ff9900; stroke-width: 1.5; }
+      .keda    { fill: #1a1f2e; stroke: #4a9eff; stroke-width: 1.5; }
+      .hpa     { fill: #2a1a2e; stroke: #e040fb; stroke-width: 1.5; }
+      .label   { font-family: monospace; fill: #e6edf3; font-size: 13px; text-anchor: middle; }
+      .sublabel{ font-family: monospace; fill: #8b949e; font-size: 10px; text-anchor: middle; }
+      .arrow   { stroke-width: 2; fill: none; marker-end: url(#ah); }
+      .dt-line { stroke: #b4a0e5; }
+      .amp-line{ stroke: #ff9900; }
+      .keda-line{stroke: #4a9eff; }
+      .hpa-line{ stroke: #e040fb; }
+
+      /* packet animations on each path */
+      .pkt { r: 5; opacity: 0; }
+      .pkt-dt  { fill: #b4a0e5; }
+      .pkt-amp { fill: #ff9900; }
+      .pkt-keda{ fill: #4a9eff; }
+      .pkt-hpa { fill: #e040fb; }
+
+      @keyframes flow-dt1 {
+        0%   { opacity:0; offset-distance:0%   }
+        5%   { opacity:1; }
+        95%  { opacity:1; }
+        100% { opacity:0; offset-distance:100% }
+      }
+      @keyframes flow-amp1 {
+        0%   { opacity:0; offset-distance:0%   }
+        5%   { opacity:1; }
+        95%  { opacity:1; }
+        100% { opacity:0; offset-distance:100% }
+      }
+      @keyframes flow-keda {
+        0%   { opacity:0; offset-distance:0%   }
+        5%   { opacity:1; }
+        95%  { opacity:1; }
+        100% { opacity:0; offset-distance:100% }
+      }
+      @keyframes flow-hpa {
+        0%   { opacity:0; offset-distance:0%   }
+        5%   { opacity:1; }
+        95%  { opacity:1; }
+        100% { opacity:0; offset-distance:100% }
+      }
+      @keyframes pulse {
+        0%,100% { opacity: 1; }
+        50%     { opacity: 0.5; }
+      }
+      @keyframes glow-dt {
+        0%,100% { filter: drop-shadow(0 0 3px #b4a0e5); }
+        50%     { filter: drop-shadow(0 0 12px #b4a0e5); }
+      }
+      @keyframes glow-amp {
+        0%,100% { filter: drop-shadow(0 0 3px #ff9900); }
+        50%     { filter: drop-shadow(0 0 12px #ff9900); }
+      }
+      @keyframes glow-keda {
+        0%,100% { filter: drop-shadow(0 0 3px #4a9eff); }
+        50%     { filter: drop-shadow(0 0 14px #4a9eff); }
+      }
+      @keyframes glow-hpa {
+        0%,100% { filter: drop-shadow(0 0 3px #e040fb); }
+        50%     { filter: drop-shadow(0 0 12px #e040fb); }
+      }
+      @keyframes scalepulse {
+        0%,100% { transform: scaleY(1);   transform-origin: bottom center; }
+        50%     { transform: scaleY(1.08); transform-origin: bottom center; }
+      }
+
+      .nginx-box  { animation: pulse 3s ease-in-out infinite; }
+      .dt-box     { animation: glow-dt  3s ease-in-out infinite 0.5s; }
+      .amp-box    { animation: glow-amp 3s ease-in-out infinite 1s; }
+      .keda-box   { animation: glow-keda 2s ease-in-out infinite; }
+      .hpa-box    { animation: glow-hpa 3s ease-in-out infinite 1.5s; }
+
+      /* moving dots on paths */
+      .dot-dt1 {
+        fill: #b4a0e5;
+        offset-path: path("M 240 130 L 310 130 L 310 210");
+        offset-rotate: 0deg;
+        animation: flow-dt1 2s linear infinite;
+      }
+      .dot-dt2 {
+        fill: #b4a0e5;
+        offset-path: path("M 240 130 L 310 130 L 310 210");
+        offset-rotate: 0deg;
+        animation: flow-dt1 2s linear infinite 1s;
+      }
+      .dot-amp1 {
+        fill: #ff9900;
+        offset-path: path("M 560 130 L 590 130 L 590 210");
+        offset-rotate: 0deg;
+        animation: flow-amp1 3s linear infinite 0.5s;
+      }
+      .dot-amp2 {
+        fill: #ff9900;
+        offset-path: path("M 560 130 L 590 130 L 590 210");
+        offset-rotate: 0deg;
+        animation: flow-amp1 3s linear infinite 2s;
+      }
+      .dot-keda1 {
+        fill: #4a9eff;
+        offset-path: path("M 370 280 L 450 280");
+        offset-rotate: 0deg;
+        animation: flow-keda 1.5s linear infinite;
+      }
+      .dot-keda2 {
+        fill: #4a9eff;
+        offset-path: path("M 370 280 L 450 280");
+        offset-rotate: 0deg;
+        animation: flow-keda 1.5s linear infinite 0.75s;
+      }
+      .dot-hpa1 {
+        fill: #e040fb;
+        offset-path: path("M 510 340 L 510 390 L 450 390 L 450 420");
+        offset-rotate: 0deg;
+        animation: flow-hpa 2s linear infinite 0.3s;
+      }
+      .dot-hpa2 {
+        fill: #e040fb;
+        offset-path: path("M 510 340 L 510 390 L 450 390 L 450 420");
+        offset-rotate: 0deg;
+        animation: flow-hpa 2s linear infinite 1.3s;
+      }
+    </style>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#8b949e"/>
+    </marker>
+    <marker id="ah-dt" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b4a0e5"/>
+    </marker>
+    <marker id="ah-amp" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ff9900"/>
+    </marker>
+    <marker id="ah-keda" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4a9eff"/>
+    </marker>
+    <marker id="ah-hpa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e040fb"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" class="bg"/>
+
+  <!-- Title -->
+  <text x="450" y="35" font-family="monospace" font-size="16" fill="#e6edf3" text-anchor="middle" font-weight="bold">⚡ KEDA Scaling Architecture</text>
+
+  <!-- nginx pod -->
+  <rect x="130" y="80" width="160" height="70" rx="8" class="nginx nginx-box"/>
+  <text x="210" y="108" class="label">nginx pod</text>
+  <text x="210" y="124" class="sublabel">nginx-keda-sample</text>
+  <text x="210" y="140" class="sublabel">port 9113 → exporter</text>
+
+  <!-- Dynatrace -->
+  <rect x="250" y="210" width="160" height="65" rx="8" class="dt dt-box"/>
+  <text x="330" y="238" class="label">Dynatrace</text>
+  <text x="330" y="254" class="sublabel">Metrics v2 API</text>
+  <text x="330" y="268" class="sublabel">live.dynatrace.com</text>
+
+  <!-- AMP -->
+  <rect x="490" y="210" width="160" height="65" rx="8" class="amp amp-box"/>
+  <text x="570" y="238" class="label">AWS AMP</text>
+  <text x="570" y="254" class="sublabel">Managed Prometheus</text>
+  <text x="570" y="268" class="sublabel">scrape interval: 60s</text>
+
+  <!-- Scraper label -->
+  <rect x="460" y="80" width="160" height="70" rx="8" fill="#1a1f1a" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="540" y="108" class="label" fill="#8b949e">AWS scraper</text>
+  <text x="540" y="124" class="sublabel">pod_exporter job</text>
+  <text x="540" y="140" class="sublabel">port 9113</text>
+
+  <!-- KEDA Operator -->
+  <rect x="350" y="310" width="200" height="65" rx="8" class="keda keda-box"/>
+  <text x="450" y="338" class="label">KEDA Operator</text>
+  <text x="450" y="354" class="sublabel">polls every 15s</text>
+  <text x="450" y="368" class="sublabel">→ Metrics Adapter</text>
+
+  <!-- HPA -->
+  <rect x="370" y="420" width="160" height="60" rx="8" class="hpa hpa-box"/>
+  <text x="450" y="448" class="label">Kubernetes HPA</text>
+  <text x="450" y="463" class="sublabel">desiredReplicas =</text>
+  <text x="450" y="477" class="sublabel">ceil(metric / threshold)</text>
+
+  <!-- nginx deployment result -->
+  <rect x="130" y="420" width="160" height="60" rx="8" fill="#0d2a0d" stroke="#00c44f" stroke-width="1.5"/>
+  <text x="210" y="448" class="label">nginx Deployment</text>
+  <text x="210" y="464" class="sublabel">1 → 10 replicas</text>
+  <text x="210" y="479" class="sublabel">nginx-keda-sample</text>
+
+  <!-- Auth boxes -->
+  <rect x="50" y="310" width="130" height="55" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="115" y="332" class="sublabel" fill="#b4a0e5">DT: SealedSecret</text>
+  <text x="115" y="346" class="sublabel" fill="#b4a0e5">dt-keda-token</text>
+  <text x="115" y="360" class="sublabel" fill="#b4a0e5">keda namespace</text>
+
+  <rect x="720" y="310" width="130" height="55" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="785" y="332" class="sublabel" fill="#ff9900">AMP: IRSA</text>
+  <text x="785" y="346" class="sublabel" fill="#ff9900">aps:QueryMetrics</text>
+  <text x="785" y="360" class="sublabel" fill="#ff9900">no static creds</text>
+
+  <!-- PATHS / ARROWS -->
+
+  <!-- nginx → DT (scrape) -->
+  <path d="M 240 130 L 310 130 L 310 210" class="arrow dt-line" marker-end="url(#ah-dt)"/>
+  <text x="268" y="122" font-family="monospace" font-size="9" fill="#b4a0e5">OneAgent</text>
+
+  <!-- nginx → AWS scraper -->
+  <path d="M 460 130 L 400 130 L 400 115 L 290 115" class="arrow" stroke="#555" stroke-dasharray="4,3" marker-end="url(#ah)"/>
+
+  <!-- AWS scraper → AMP -->
+  <path d="M 540 150 L 540 210" class="arrow amp-line" marker-end="url(#ah-amp)"/>
+  <text x="555" y="188" font-family="monospace" font-size="9" fill="#ff9900">60s</text>
+
+  <!-- DT → KEDA -->
+  <path d="M 370 275 L 370 310" class="arrow dt-line" marker-end="url(#ah-dt)"/>
+
+  <!-- AMP → KEDA -->
+  <path d="M 570 275 L 570 295 L 550 310" class="arrow amp-line" marker-end="url(#ah-amp)"/>
+
+  <!-- KEDA → HPA -->
+  <path d="M 510 375 L 510 390 L 450 390 L 450 420" class="arrow keda-line" marker-end="url(#ah-keda)"/>
+  <text x="535" y="395" font-family="monospace" font-size="9" fill="#4a9eff">ExternalMetric</text>
+
+  <!-- HPA → nginx deployment -->
+  <path d="M 370 450 L 290 450" class="arrow hpa-line" marker-end="url(#ah-hpa)"/>
+  <text x="330" y="443" font-family="monospace" font-size="9" fill="#e040fb">scale</text>
+
+  <!-- Auth → KEDA -->
+  <path d="M 180 337 L 350 337" class="arrow" stroke="#555" stroke-dasharray="3,3" marker-end="url(#ah)"/>
+  <path d="M 720 337 L 550 337" class="arrow" stroke="#555" stroke-dasharray="3,3" marker-end="url(#ah)"/>
+
+  <!-- Animated dots -->
+  <circle r="5" class="dot-dt1"/>
+  <circle r="5" class="dot-dt2"/>
+  <circle r="5" class="dot-amp1"/>
+  <circle r="5" class="dot-amp2"/>
+  <circle r="5" class="dot-keda1"/>
+  <circle r="5" class="dot-keda2"/>
+  <circle r="5" class="dot-hpa1"/>
+  <circle r="5" class="dot-hpa2"/>
+
+  <!-- Legend -->
+  <rect x="30" y="460" width="90" height="16" rx="3" fill="none" stroke="#b4a0e5" stroke-width="1"/>
+  <text x="75" y="472" font-family="monospace" font-size="9" fill="#b4a0e5" text-anchor="middle">Dynatrace flow</text>
+  <rect x="130" y="460" width="80" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="1"/>
+  <text x="170" y="472" font-family="monospace" font-size="9" fill="#ff9900" text-anchor="middle">AMP flow</text>
+  <rect x="220" y="460" width="80" height="16" rx="3" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <text x="260" y="472" font-family="monospace" font-size="9" fill="#4a9eff" text-anchor="middle">KEDA → HPA</text>
+  <rect x="310" y="460" width="80" height="16" rx="3" fill="none" stroke="#e040fb" stroke-width="1"/>
+  <text x="350" y="472" font-family="monospace" font-size="9" fill="#e040fb" text-anchor="middle">HPA → scale</text>
+</svg>
