@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 570" width="900" height="570">
   <defs>
     <style>
       .bg { fill: #0d1117; }
@@ -146,7 +146,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="520" class="bg"/>
+  <rect width="900" height="570" class="bg"/>
 
   <!-- Title -->
   <text x="450" y="35" font-family="monospace" font-size="16" fill="#e6edf3" text-anchor="middle" font-weight="bold">⚡ KEDA Scaling Architecture</text>
@@ -245,13 +245,13 @@
   <circle r="5" class="dot-hpa1"/>
   <circle r="5" class="dot-hpa2"/>
 
-  <!-- Legend (bottom-right, away from deployment boxes) -->
-  <rect x="560" y="460" width="90" height="16" rx="3" fill="none" stroke="#b4a0e5" stroke-width="1"/>
-  <text x="605" y="472" font-family="monospace" font-size="9" fill="#b4a0e5" text-anchor="middle">Dynatrace flow</text>
-  <rect x="660" y="460" width="80" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="1"/>
-  <text x="700" y="472" font-family="monospace" font-size="9" fill="#ff9900" text-anchor="middle">AMP flow</text>
-  <rect x="750" y="460" width="80" height="16" rx="3" fill="none" stroke="#4a9eff" stroke-width="1"/>
-  <text x="790" y="472" font-family="monospace" font-size="9" fill="#4a9eff" text-anchor="middle">KEDA → HPA</text>
-  <rect x="750" y="480" width="80" height="16" rx="3" fill="none" stroke="#e040fb" stroke-width="1"/>
-  <text x="790" y="492" font-family="monospace" font-size="9" fill="#e040fb" text-anchor="middle">HPA → scale</text>
+  <!-- Legend — single row at bottom, clear of all boxes -->
+  <rect x="200" y="510" width="100" height="16" rx="3" fill="none" stroke="#b4a0e5" stroke-width="1"/>
+  <text x="250" y="522" font-family="monospace" font-size="9" fill="#b4a0e5" text-anchor="middle">Dynatrace flow</text>
+  <rect x="320" y="510" width="80" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="1"/>
+  <text x="360" y="522" font-family="monospace" font-size="9" fill="#ff9900" text-anchor="middle">AMP flow</text>
+  <rect x="420" y="510" width="90" height="16" rx="3" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <text x="465" y="522" font-family="monospace" font-size="9" fill="#4a9eff" text-anchor="middle">KEDA → HPA</text>
+  <rect x="530" y="510" width="90" height="16" rx="3" fill="none" stroke="#e040fb" stroke-width="1"/>
+  <text x="575" y="522" font-family="monospace" font-size="9" fill="#e040fb" text-anchor="middle">HPA → scale</text>
 </svg>
