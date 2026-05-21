@@ -4,25 +4,26 @@
       .bg { fill: #0d1117; }
       text { font-family: monospace; }
 
-      /* Row highlight cycles through each field every 2s */
-      @keyframes hl { 0%,10%{opacity:1} 15%,100%{opacity:0} }
-      .hl0  { animation: hl 14s ease-in-out infinite 0s;    fill:#ffffff10; }
-      .hl1  { animation: hl 14s ease-in-out infinite 2s;    fill:#ffffff10; }
-      .hl2  { animation: hl 14s ease-in-out infinite 4s;    fill:#ffffff10; }
-      .hl3  { animation: hl 14s ease-in-out infinite 6s;    fill:#ffffff10; }
-      .hl4  { animation: hl 14s ease-in-out infinite 8s;    fill:#ffffff10; }
-      .hl5  { animation: hl 14s ease-in-out infinite 10s;   fill:#ffffff10; }
-      .hl6  { animation: hl 14s ease-in-out infinite 12s;   fill:#ffffff10; }
+      /* 10s cycle, 7 fields, 1.43s each (14.3% of cycle).
+         Visible 0–12%, fade 12–15%, hidden 15–100%.            */
+      @keyframes hl { 0%,12%{opacity:1} 15%,100%{opacity:0} }
+      .hl0  { animation: hl 10s ease-in-out infinite 0s;     fill:#ffffff10; }
+      .hl1  { animation: hl 10s ease-in-out infinite 1.43s;  fill:#ffffff10; }
+      .hl2  { animation: hl 10s ease-in-out infinite 2.86s;  fill:#ffffff10; }
+      .hl3  { animation: hl 10s ease-in-out infinite 4.29s;  fill:#ffffff10; }
+      .hl4  { animation: hl 10s ease-in-out infinite 5.71s;  fill:#ffffff10; }
+      .hl5  { animation: hl 10s ease-in-out infinite 7.14s;  fill:#ffffff10; }
+      .hl6  { animation: hl 10s ease-in-out infinite 8.57s;  fill:#ffffff10; }
 
-      /* Tooltip fades */
-      @keyframes tip { 0%,10%{opacity:1} 15%,100%{opacity:0} }
-      .tip0 { animation: tip 14s ease-in-out infinite 0s; }
-      .tip1 { animation: tip 14s ease-in-out infinite 2s; }
-      .tip2 { animation: tip 14s ease-in-out infinite 4s; }
-      .tip3 { animation: tip 14s ease-in-out infinite 6s; }
-      .tip4 { animation: tip 14s ease-in-out infinite 8s; }
-      .tip5 { animation: tip 14s ease-in-out infinite 10s; }
-      .tip6 { animation: tip 14s ease-in-out infinite 12s; }
+      /* Tooltip fades — same timing */
+      @keyframes tip { 0%,12%{opacity:1} 15%,100%{opacity:0} }
+      .tip0 { animation: tip 10s ease-in-out infinite 0s;    }
+      .tip1 { animation: tip 10s ease-in-out infinite 1.43s; }
+      .tip2 { animation: tip 10s ease-in-out infinite 2.86s; }
+      .tip3 { animation: tip 10s ease-in-out infinite 4.29s; }
+      .tip4 { animation: tip 10s ease-in-out infinite 5.71s; }
+      .tip5 { animation: tip 10s ease-in-out infinite 7.14s; }
+      .tip6 { animation: tip 10s ease-in-out infinite 8.57s; }
 
       /* Pulse on active tip box */
       @keyframes tipglow { 0%,100%{opacity:1} 50%{opacity:0.7} }
